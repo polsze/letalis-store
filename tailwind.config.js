@@ -18,7 +18,7 @@ export default {
       },
       colors: {
         'blueBanner': '#110fec',
-        'azul': '#003566'
+        'azul': '#0874fe'
       },
       animation: {
         "loop-scroll": 'loop-scroll 60s linear infinite',

@@ -120,7 +120,7 @@ const Header = () => {
             />
             <button
               onClick={handleSearch}
-              className="ml-2 px-4 py-2 bg-sky-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
+              className="ml-2 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-950 focus:outline-none"
             >
               Buscar
             </button>

@@ -17,7 +17,7 @@ const Categories = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-20">
+    <div className="w-full h-auto container mx-auto mt-20">
       <h2 className="text-3xl font-bold pt-10 mb-3 bg-gradient-to-r from-blueBanner via-blue-600 to-blue-400 inline-block text-transparent bg-clip-text xxxl:pl-48 xxl:pl-3 lg:w-full lg:text-center lg:mb-10">
         <span className="my-auto border border-blue-300 mr-3"></span>PRODUCTOS
       </h2>

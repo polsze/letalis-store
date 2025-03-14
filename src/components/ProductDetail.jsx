@@ -13,23 +13,31 @@ const ProductDetail = () => {
       const products = await fetchProducts();
       const selectedProduct = products.find((item) => item.id === parseInt(id));
       setProduct(selectedProduct);
-
-      // Filtrar productos recomendados por categoría
+  
       if (selectedProduct) {
-        const recommendations = products
-          .filter(
-            (item) =>
-              item.category === selectedProduct.category &&
-              item.id !== selectedProduct.id
-          )
-          .slice(0, 3); // Mostrar los primeros 3 productos
-        setRecommendedProducts(recommendations);
+        // Filtrar productos recomendados por la misma marca (excluyendo el actual)
+        let filteredProducts = products.filter(
+          (item) => item.brand === selectedProduct.brand && item.id !== selectedProduct.id
+        );
+  
+        // Desordenar aleatoriamente los productos
+        filteredProducts = filteredProducts.sort(() => Math.random() - 0.5);
+  
+        // Tomar 3 productos aleatorios
+        let randomSelection = filteredProducts.slice(0, 3);
+  
+        // Ordenar la selección de 3 productos por precio de menor a mayor
+        randomSelection.sort((a, b) => a.price - b.price);
+  
+        setRecommendedProducts(randomSelection);
       }
     };
-
+  
     loadProduct();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [id]);
+  
+  
 
   if (!product) {
     return <div className="text-center mt-8">Cargando...</div>;
@@ -49,7 +57,7 @@ const ProductDetail = () => {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full max-w-md object-cover rounded-lg shadow-md"
+            className="w-full max-w-xs object-cover rounded-lg shadow-md w-auto h-auto"
             width={500}
             height={500}
           />
@@ -73,17 +81,17 @@ const ProductDetail = () => {
             {product.name}
           </h1>
           <p className="text-sm text-gray-500 mb-4">
-            Nuevo | {product.stock} disponibles
+            Nuevo | Disponible
           </p>
-          <p className="text-4xl font-semibold text-green-600 mb-4">
-            ${product.price}
+          <p className="text-lg text-green-600 font-bold">
+            {product.moneyTipe === "USD" ? "USD" : "$"} {product.price}
           </p>
-          <p className="text-gray-600 mb-4">{}</p>
+          <p className="text-gray-600 mb-4">{ }</p>
 
           {/* Buy Button */}
           <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-data-preference-id="241601039-468ea8b1-338a-492e-9c2b-7274c0ff0e6e" data-source="button">
-</script>
+            data-preference-id="241601039-468ea8b1-338a-492e-9c2b-7274c0ff0e6e" data-source="button">
+          </script>
           <button className="w-full bg-yellow-500 text-black py-3 rounded-md hover:bg-yellow-600 transition mb-4 flex flex-row items-center justify-evenly xs:flex-col md:px-2">
             Canal Ventas 1
             <svg
@@ -185,9 +193,7 @@ data-preference-id="241601039-468ea8b1-338a-492e-9c2b-7274c0ff0e6e" data-source=
           <div className="mt-6">
             <h3 className="text-lg font-semibold mb-2">Métodos de pago</h3>
             <ul className="list-disc pl-4 text-sm text-gray-600">
-              <li>Tarjeta de crédito/débito</li>
               <li>Transferencia bancaria</li>
-              <li>Efectivo en puntos de pago</li>
             </ul>
           </div>
         </div>
@@ -222,7 +228,7 @@ data-preference-id="241601039-468ea8b1-338a-492e-9c2b-7274c0ff0e6e" data-source=
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-full h-32 object-cover rounded-md mb-2"
+                className="w-full h-32 object-contain rounded-md mb-2"
                 width={500}
                 height={500}
                 loading="lazy"

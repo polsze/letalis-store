@@ -20,10 +20,10 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow overflow-auto">
+        <main className="flex-grow overflow-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/productos" element={<Categories />} />
+            <Route path="/productos" element={<Categories />}/>
             <Route path="/productos/:category/:link/:id" element={<ProductDetail />} />
             <Route path="/productos/:category" element={<ProductList />} />
             <Route path="/resultados-de-busqueda" element={<SearchResults />} />

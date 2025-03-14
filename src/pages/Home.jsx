@@ -58,7 +58,7 @@ const Home = () => {
       <div className="w-full mx-auto">
         <Hero />
         <div className='container mx-auto'>
-        <BannerOffer imageName="Banner Ofertas Categorias Letalis Store.webp" />
+        <BannerOffer imageName="Banner Ofertas Categorias Letalis Store.png" />
         <BannerInfo />
         <BannerCategories />
         <h2 className="text-3xl italic mb-10 text-center "><span className="my-auto border border-blue-300 mr-6"></span>LETALIS STORE - OFERTAS ESPECIALES X TIEMPO LIMITADO</h2>
@@ -67,7 +67,7 @@ const Home = () => {
         <div className="relative mx-auto max-w-7xl mb-10 xxl:max-w-4xl lg:max-w-xl xs:px-2 sm:mb-3">
           <div
             ref={sliderRef}
-            className="flex gap-6 overflow-x-scroll scroll-smooth scrollbar-hide pb-4 xxl:gap-3 lg:gap-1 lg:flex-row lg:flex-wrap lg:justify-center lg:items-center"
+            className="flex gap-6 overflow-x-scroll scrollbar-hide scroll-smooth  pb-4 xxl:gap-3 lg:scrollbar-default"
           >
             {products.map((product) => (
               <div key={product.id} className="min-w-[250px] sm:min-w-[300px]">
@@ -95,7 +95,7 @@ const Home = () => {
           )}
         </div>
 
-        <BannerAgent imageName="banner agent.png" />
+        <BannerAgent />
         <BrandsCarrousel />
         <BannerServices />
         </div>

@@ -7,7 +7,7 @@ const BannerServices = () => {
           target="_blank"
         >
           <img
-            src="/img/Banner Reparacion de Celulares y Tablets de Letalis Store.webp"
+            src="/img/Banner Reparacion de Celulares y Tablets de Letalis Store.png"
             alt="Banner Reparacion de Celulares y Tablets de Letalis Store"
             className="pb-10 sm:pb-3"
             width={1600}
@@ -20,7 +20,7 @@ const BannerServices = () => {
           target="_blank"
         >
           <img
-            src="/img/Banner Reparacion de PC y Notebooks de Letalis Store.webp"
+            src="/img/Banner Reparacion de PC y Notebooks de Letalis Store.png"
             alt="Banner Reparacion de PC y Notebooks de Letalis Store"
             className=""
             width={1600}

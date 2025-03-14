@@ -139,7 +139,7 @@ const Contact = () => {
             )}
 
             <button
-              className="w-48 h-16 bg-black my-10 text-xl text-white"
+              className="w-48 h-16 bg-azul my-10 text-xl text-white transition-all duration-400 hover:bg-green-500"
               type="submit"
               disabled={loading}
             >

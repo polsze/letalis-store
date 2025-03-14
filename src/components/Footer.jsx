@@ -96,13 +96,13 @@ const Footer = () => {
         </div>
 
         {/* Icono para regresar arriba */}
-        <a href="#" aria-label="Back to top">
+        <a href="/" aria-label="Back to top">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={30}
             height={30}
             viewBox="0 0 128 128"
-            className="mt-36 mr-6 sm:mt-10 sm:mr-0"
+            className="mr-6 sm:mt-10 sm:mr-0"
           >
             <path
               fill="#f97316"

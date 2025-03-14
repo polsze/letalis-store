@@ -1,51 +1,30 @@
 [
   {
     "id": 1,
-    "category": "Climatización",
-    "path": "climatizacion",
-    "image": "/img/Banner Categoría Aires Acondicionados Letalis Store.webp",
-    "altImg":"Banner Categoría Aires Acondicionados Letalis Store"
-  },
-  {
-    "id": 2,
-    "category": "Smart TV's",
-    "path": "smart-tvs",
-    "image": "/img/Banner Categoría Smart TV Letalis Store.webp",
-     "altImg":"Banner Categoría Smart TV Letalis Store"
-  },
-  {
-    "id": 3,
-    "category": "Smartphones",
-    "path": "smartphones",
-    "image": "/img/Banner Categoría Celulares Letalis Store.webp",
+    "category": "Celulares",
+    "path": "celulares",
+    "image": "/img/Banner Categoria Celulares Letalis Store.png",
      "altImg":"Banner Categoría Celulares Letalis Store"
   },
   {
+    "id": 2,
+    "category": "Consolas",
+    "path": "consolas",
+    "image": "/img/Banner Categoria Consolas Letalis Store.png",
+     "altImg":"Banner Categoría Consolas Letalis Store"
+  },
+  {
+    "id": 3,
+    "category": "Hogar",
+    "path": "hogar",
+    "image": "/img/Banner Categoria Hogar Letalis Store.png",
+    "altImg":"Banner Categoría Hogar Letalis Store"
+  },
+  {
     "id": 4,
-    "category": "Hardware",
-    "path": "hardware",
-    "image": "/img/Banner Categoría Hardware Letalis Store.webp",
-     "altImg":"Banner Categoría Hardware Letalis Store"
-  },
-  {
-    "id": 5,
-    "category": "Ventiladores",
-    "path": "ventiladores",
-    "image": "/img/Banner Categoría Ventiladores Letalis Store.webp",
-     "altImg":"Banner Categoría Ventiladores Letalis Store"
-  },
-  {
-    "id": 6,
-    "category": "Piletas",
-    "path": "piletas",
-    "image": "/img/Banner Categoría Piletas Letalis Store.webp",
-     "altImg":"Banner Categoría Piletas Letalis Store"
-  },
-  {
-    "id": 7,
-    "category": "Combos",
-    "path": "combos",
-    "image": "/img/Banner Categoria Combos Letalis Store.webp",
-     "altImg":"Banner Categoria Combos Letalis Store"
+    "category": "Notebooks",
+    "path": "notebooks",
+    "image": "/img/Banner Categoria Notebooks Letalis Store.png",
+     "altImg":"Banner Categoría Notebooks Letalis Store"
   }
 ]

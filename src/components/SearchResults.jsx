@@ -25,8 +25,8 @@ const SearchResults = () => {
                 />
                 <div>
                   <h2 className="text-lg font-bold">{product.name}</h2>
-                  <p className="text-base text-green-600 font-bold italic">
-                    ${product.price}
+                  <p className="text-lg text-green-600 font-bold">
+                    {product.moneyTipe === "USD" ? "USD" : "$"} {product.price}
                   </p>
                 </div>
               </Link>

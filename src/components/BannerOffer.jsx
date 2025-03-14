@@ -1,5 +1,4 @@
 
-// eslint-disable-next-line react/prop-types
 const BannerOffer = ({ imageName }) => {
   return (
     <div className="w-auto max-w-screen-lg mx-auto overflow-hidden mt-12 xxxl:mt-2">
